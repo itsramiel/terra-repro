@@ -1,9 +1,10 @@
 import * as Terra from 'terra-react';
 import {useEffect} from 'react';
 import {Button, View} from 'react-native';
+import Config from 'react-native-config';
 
-const DEV_ID = '';
-const API_KEY = '';
+const DEV_ID = Config.DEV_ID;
+const API_KEY = Config.API_KEY;
 
 const REF_ID = 'dnejfekfne';
 
@@ -40,36 +41,9 @@ function App() {
       });
   };
 
-  const getMestruationData = () => {
-    Terra.getMenstruation(
-      Terra.Connections.APPLE_HEALTH,
-      FROM_DATE,
-      TO_DATE,
-      false,
-    )
-      .then(result => {
-        console.log(result);
-      })
-      .catch(e => {
-        console.log(e);
-      });
-  };
-
-  const getSleepData = () => {
-    Terra.getSleep(Terra.Connections.APPLE_HEALTH, FROM_DATE, TO_DATE, false)
-      .then(result => {
-        console.log(result);
-      })
-      .catch(e => {
-        console.log(e);
-      });
-  };
-
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Button title="get body data" onPress={getBodyData} />
-      <Button title="get mestruation data" onPress={getMestruationData} />
-      <Button title="get sleep data" onPress={getSleepData} />
     </View>
   );
 }
