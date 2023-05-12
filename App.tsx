@@ -32,7 +32,14 @@ function App() {
   }, []);
 
   const getBodyData = () => {
-    Terra.getBody(Terra.Connections.APPLE_HEALTH, FROM_DATE, TO_DATE, false)
+    // never resolves
+    Terra.getBody(
+      Terra.Connections.APPLE_HEALTH,
+      FROM_DATE,
+      TO_DATE,
+      true,
+      false,
+    )
       .then(result => {
         console.log(result);
       })

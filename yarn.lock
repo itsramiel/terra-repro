@@ -6467,10 +6467,10 @@ temp@^0.8.4:
   dependencies:
     rimraf "~2.6.2"
 
-terra-react@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/terra-react/-/terra-react-1.4.0.tgz#e61057b9d7204cbd9257896f4dacf09d851a37ef"
-  integrity sha512-JCz/eIsZWFjlCb8LSxMiJK55idvdrg2fhiYZ66ZZS+AS1anFLmHlx5sbuFFhzJqXl+iwc50G785YiRJKmWTl4A==
+terra-react@1.4.9:
+  version "1.4.9"
+  resolved "https://registry.yarnpkg.com/terra-react/-/terra-react-1.4.9.tgz#56fe1fde073bcbdd9a9eb48d8034135b7fa51381"
+  integrity sha512-b42FPSdKokEzd3el3eDnvwWcu/IZ9yY9/pQUXU3NF5mk2P1BuGHeUD2LGG3bWlUpIr4Qt6Gfxq8aZ4iJwPG+jA==
 
 terser@^5.15.0:
   version "5.17.3"
